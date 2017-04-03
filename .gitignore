@@ -8,3 +8,6 @@ dist
 *.lerna_backup
 build
 yarn.lock
+.jest
+junit.xml
+coverage/
