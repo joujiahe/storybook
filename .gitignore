@@ -11,3 +11,4 @@ yarn.lock
 .jest
 junit.xml
 coverage/
+packages/examples/automated-*
