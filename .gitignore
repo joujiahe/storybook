@@ -12,3 +12,4 @@ yarn.lock
 junit.xml
 coverage/
 packages/examples/automated-*
+yarn.lock
