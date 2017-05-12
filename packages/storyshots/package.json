@@ -23,6 +23,8 @@
   },
   "dependencies": {
     "@storybook/storybook": "*",
+    "@storybook/storybook-addon-actions": "*",
+    "@storybook/storybook-addon-links": "*",
     "@storybook/storybook-addons": "*",
     "@storybook/storybook-channel": "*",
     "babel-runtime": "^6.23.0",

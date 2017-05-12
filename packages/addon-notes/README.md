@@ -16,7 +16,6 @@ Then create a file called `addons.js` in your storybook config.
 Add following content to it:
 
 ```js
-import '@storybook/storybook/addons';
 import '@storybook/storybook-addon-notes/register';
 ```
 
@@ -24,9 +23,11 @@ Then write your stories like this:
 
 ```js
 import React from 'react';
-import { storiesOf, action } from '@storybook/storybook';
-import Button from './Button';
+import { storiesOf } from '@storybook/storybook';
+import { action } from '@storybook/storybook-addon-actions';
 import { WithNotes } from '@storybook/storybook-addon-notes';
+
+import Button from './Button';
 
 storiesOf('Button', module)
   .add('with text', () => (

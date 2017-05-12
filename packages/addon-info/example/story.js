@@ -1,6 +1,8 @@
 import React from 'react';
 import Button from './Button';
-import { storiesOf, action } from '@storybook/storybook';
+import { storiesOf } from '@storybook/storybook';
+import { action } from '@storybook/storybook-addon-actions';
+
 import backgrounds from 'react-storybook-addon-backgrounds';
 
 storiesOf('Button').addWithInfo(

@@ -1,5 +1,8 @@
 import React from 'react';
-import { storiesOf, action, linkTo } from '@storybook/storybook';
+import { storiesOf } from '@storybook/storybook';
+import { action } from '@storybook/storybook-addon-actions';
+import { linkTo } from '@storybook/storybook-addon-links';
+
 import Button from './Button';
 import Welcome from './Welcome';
 
