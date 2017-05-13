@@ -36,7 +36,7 @@ const valueStyles = {
   },
 };
 
-function previewArray(val) {
+function previewArray (val) {
   const items = {};
   val.slice(0, 3).forEach((item, i) => {
     items[`n${i}`] = <PropVal val={item} />;
@@ -54,7 +54,7 @@ function previewArray(val) {
   );
 }
 
-function previewObject(val) {
+function previewObject (val) {
   const names = Object.keys(val);
   const items = {};
   names.slice(0, 3).forEach((name, i) => {
@@ -75,7 +75,7 @@ function previewObject(val) {
   );
 }
 
-function previewProp(val) {
+function previewProp (val) {
   let braceWrap = true;
   let content = null;
   if (typeof val === 'number') {
@@ -111,7 +111,7 @@ function previewProp(val) {
 }
 
 export default class PropVal extends React.Component {
-  render() {
+  render () {
     return previewProp(this.props.val);
   }
 }
