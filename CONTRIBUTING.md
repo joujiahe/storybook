@@ -163,7 +163,7 @@ getstorybook
 Then link storybook inside the sample project with:
 
 ```sh
-npm link @storybook/storybook
+npm link @storybook/react
 ```
 
 ### Getting Changes

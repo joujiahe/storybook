@@ -1,0 +1,42 @@
+# Storybook Addon Notes
+
+This [Storybook](https://getstorybook.io) addon allows you to write notes for your stories.
+
+![Storybook Addon Notes Demo](docs/demo.png)
+
+### Getting Started
+
+```sh
+npm i --save-dev @storybook/addon-notes
+```
+
+Then create a file called `addons.js` in your storybook config.
+
+Add following content to it:
+
+```js
+import '@storybook/addon-notes/register';
+```
+
+Then write your stories like this:
+
+```js
+import React from 'react';
+import { storiesOf } from '@storybook/storybook';
+import { action } from '@storybook/addon-actions';
+import { WithNotes } from '@storybook/addon-notes';
+
+import Button from './Button';
+
+storiesOf('Button', module)
+  .add('with text', () => (
+    <WithNotes notes={'This is a very simple Button and you can click on it.'}>
+      <Button onClick={action('clicked')}>Hello Button</Button>
+    </WithNotes>
+  ))
+  .add('with some emoji', () => (
+    <WithNotes notes={'Here we use some emoji as the Button text. Isn\'t it look nice?'}>
+      <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>
+    </WithNotes>
+  ));
+```
