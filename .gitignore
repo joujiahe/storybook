@@ -12,3 +12,4 @@ junit.xml
 coverage/
 packages/examples/automated-*
 yarn.lock
+/**/LICENSE
