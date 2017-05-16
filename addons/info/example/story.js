@@ -7,7 +7,7 @@ import Button from './Button';
 
 storiesOf('Button').addWithInfo(
   'simple usage',
-  `This is the basic usage with the button with providing a label to show the text.`,
+  'This is the basic usage with the button with providing a label to show the text.',
   () => (
     <div>
       <Button label="The Button" onClick={action('onClick')} />
