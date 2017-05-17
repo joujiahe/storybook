@@ -1,3 +1,10 @@
-node_modules
-src
+/src/
+/example/
+/demo/
+/docs/
+/node_modules/
+/.storybook/
+
+*.md
+
 .babelrc
