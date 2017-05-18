@@ -93,13 +93,13 @@ export default class Story extends React.Component {
     MTRC.configure(this.props.mtrcConf);
   }
 
-  componentWillReceiveProps (nextProps) {
+  componentWillReceiveProps(nextProps) {
     this.setState({
       stylesheet: nextProps.styles(JSON.parse(JSON.stringify(stylesheet))),
     });
   }
 
-  _renderStory () {
+  _renderStory() {
     return (
       <div>
         {this.props.children}
@@ -107,7 +107,7 @@ export default class Story extends React.Component {
     );
   }
 
-  _renderInline () {
+  _renderInline() {
     return (
       <div>
         <div style={this.state.stylesheet.infoPage}>
@@ -130,7 +130,7 @@ export default class Story extends React.Component {
     );
   }
 
-  _renderOverlay () {
+  _renderOverlay() {
     const linkStyle = {
       ...stylesheet.link.base,
       ...stylesheet.link.topRight,
@@ -173,7 +173,7 @@ export default class Story extends React.Component {
     );
   }
 
-  _getInfoHeader () {
+  _getInfoHeader() {
     if (!this.props.context || !this.props.showHeader) {
       return null;
     }
@@ -186,7 +186,7 @@ export default class Story extends React.Component {
     );
   }
 
-  _getInfoContent () {
+  _getInfoContent() {
     if (!this.props.info) {
       return '';
     }
@@ -234,7 +234,7 @@ export default class Story extends React.Component {
     return retDiv;
   }
 
-  _getSourceCode () {
+  _getSourceCode() {
     if (!this.props.showSource) {
       return null;
     }
@@ -320,7 +320,7 @@ export default class Story extends React.Component {
     );
   }
 
-  render () {
+  render() {
     if (this.props.showInline) {
       return this._renderInline();
     }

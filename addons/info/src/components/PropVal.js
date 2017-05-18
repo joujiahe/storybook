@@ -54,7 +54,7 @@ function previewArray (val) {
   );
 }
 
-function previewObject (val) {
+function previewObject(val) {
   const names = Object.keys(val);
   const items = {};
   names.slice(0, 3).forEach((name, i) => {
