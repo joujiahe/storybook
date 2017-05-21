@@ -1,5 +1,6 @@
 import React from 'react';
-import addons from '@storybook/storybook-addons';
+import PropTypes from 'prop-types';
+import addons from '@storybook/addons';
 
 export class WithNotes extends React.Component {
   render() {
@@ -14,6 +15,6 @@ export class WithNotes extends React.Component {
 }
 
 WithNotes.propTypes = {
-  children: React.PropTypes.node,
-  notes: React.PropTypes.string,
+  children: PropTypes.node,
+  notes: PropTypes.string,
 };

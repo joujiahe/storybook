@@ -1,5 +1,6 @@
 import React from 'react';
-import addons from '@storybook/storybook-addons';
+import PropTypes from 'prop-types';
+import addons from '@storybook/addons';
 
 const styles = {
   notesPanel: {
@@ -58,8 +59,8 @@ export class Notes extends React.Component {
 }
 
 Notes.propTypes = {
-  channel: React.PropTypes.object,
-  api: React.PropTypes.object,
+  channel: PropTypes.object,
+  api: PropTypes.object,
 };
 
 // Register the addon with a unique name.
