@@ -17,13 +17,13 @@ npm install @storybook/codemod
 
 ## Transforms
 
-### add-organisation-to-package-name
+### update-organisation-name
 
-Updates package names in imports to include our organisation name prefix
-(`@storybook/`), stripping off the old `@storybook/` prefix.
+Renames the organisation name from `@kadira` to `@storybook`, whilst also
+updating the package names.
 
 ```js
-> jscodeshift -t add-organisation-to-package-name path/to/source.js
+> jscodeshift -t update-organisation-name path/to/source.js
 ```
 
 Example:
