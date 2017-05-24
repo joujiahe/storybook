@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import { linkTo } from '../src';
 
 storiesOf('Button', module)
@@ -12,7 +12,7 @@ storiesOf('Button', module)
   .add('Multiple Selection', () => (
     <MultipleStories onClick={linkTo('Button', (filter) => {
       return filter === 'First' ? 'First Story' : 'Second Story';
-    })}/> 
+    })}/>
   ));
 
 const MultipleStories = ({onClick}) => {

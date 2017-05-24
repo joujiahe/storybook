@@ -1,4 +1,4 @@
-import addons from '@kadira/storybook-addons';
+import addons from '@storybook/addons';
 import { ADDON_ID, EVENT_ID } from './';
 
 export function register() {
