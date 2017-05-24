@@ -9,6 +9,7 @@
     }
   },
   "packages": [
+    "addons/*",
     "packages/*",
     "examples/*"
   ],
